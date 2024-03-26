@@ -1,0 +1,79 @@
+body {
+    font-family: 'Quicksand', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 5px #0b9eb8;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    overflow: auto;
+  }
+  
+  h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .lord-icon{
+    font-size: 20px;
+  }
+
+  .img img {
+    width: 100px;
+    margin-bottom:-100px;
+    margin-left: 140px;
+    cursor: pointer;
+    padding: 20px;
+    margin-top: 55px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    animation: animacion 3s infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes animacion {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.propietario{
+  margin-left: 500px;
+  font-size: 10px;
+  color:#0b9eb841;
+  font-family: 'Kanit';
+}
